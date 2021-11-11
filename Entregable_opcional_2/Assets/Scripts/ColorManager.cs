@@ -30,7 +30,7 @@ public class ColorManager : MonoBehaviour
 
     }
 
-    public Vector3 RandomPosition()
+    public Vector3 RandomPosition() // FUNCION DE CAMBIO DE POSICION 
     {
         VectorPosition = new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), 0);
         return VectorPosition ;
@@ -38,9 +38,10 @@ public class ColorManager : MonoBehaviour
 
     void OnMouseDown()
     {
-
-       
-         
+        VectorPosition = int.Parse(GetComponent<BoxCollider>().);
+        RandomColor();
+        RandomPosition();
+        RandomScale(); 
     }
 
     void Start()
