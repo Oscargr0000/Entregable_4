@@ -38,17 +38,11 @@ public class ColorManager : MonoBehaviour
 
     void OnMouseDown()
     {
-        VectorPosition = int.Parse(GetComponent<BoxCollider>().);
-        RandomColor();
-        RandomPosition();
-        RandomScale(); 
+        GetComponent<MeshRenderer>().material.color = RandomColor();
+        GetComponent<Transform>().position = RandomPosition();
+        GetComponent<Transform>().localScale = RandomScale();
     }
 
-    void Start()
-    {
-
-       
-
-    }
+    
 
 }
